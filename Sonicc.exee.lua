@@ -1,3 +1,7 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
 local sonic = Instance.new("Frame")
@@ -51,7 +55,7 @@ TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
 TextLabel_2.Font = Enum.Font.SciFi
 TextLabel_2.Text = "Made by mr_chinese#7614"
 TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.TextSize = 40.000
+TextLabel_2.TextSize = 41.000
 
 TabHolder.Name = "TabHolder"
 TabHolder.Parent = sonic
@@ -122,7 +126,7 @@ TextButton_2.TextSize = 19.000
 
 -- Scripts:
 
-local function LNUID_fake_script() -- Tab1_2.LocalScript 
+local function GOKJP_fake_script() -- Tab1_2.LocalScript 
 	local script = Instance.new('LocalScript', Tab1_2)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -130,8 +134,18 @@ local function LNUID_fake_script() -- Tab1_2.LocalScript
 		script.Parent.Parent.Parent.Tab2.Visible = false
 	end) 
 end
-coroutine.wrap(LNUID_fake_script)()
-local function OUIUMJ_fake_script() -- Tab2.LocalScript 
+coroutine.wrap(GOKJP_fake_script)()
+local function DUJJNWT_fake_script() -- Tab1_2.LocalScript 
+	local script = Instance.new('LocalScript', Tab1_2)
+
+	local Sound = script.Parent.Parent.Sound
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Sound:Play()
+	end)
+end
+coroutine.wrap(DUJJNWT_fake_script)()
+local function LLMWPA_fake_script() -- Tab2.LocalScript 
 	local script = Instance.new('LocalScript', Tab2)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -139,8 +153,38 @@ local function OUIUMJ_fake_script() -- Tab2.LocalScript
 		script.Parent.Parent.Parent.Tab2.Visible = true
 	end) 
 end
-coroutine.wrap(OUIUMJ_fake_script)()
-local function EBWYR_fake_script() -- sonic.LocalScript 
+coroutine.wrap(LLMWPA_fake_script)()
+local function SOQQ_fake_script() -- Tab2.LocalScript 
+	local script = Instance.new('LocalScript', Tab2)
+
+	local Sound = script.Parent.Parent.Sound
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Sound:Play()
+	end) 
+end
+coroutine.wrap(SOQQ_fake_script)()
+local function PPGI_fake_script() -- Tab2.LocalScript 
+	local script = Instance.new('LocalScript', Tab2)
+
+	local Sound = script.Parent.Parent.Sound
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Sound:Play()
+	end)
+end
+coroutine.wrap(PPGI_fake_script)()
+local function ZAKIPX_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local Sound = script.Parent.Parent.Sound
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Sound:Play()
+	end)
+end
+coroutine.wrap(ZAKIPX_fake_script)()
+local function DGTXW_fake_script() -- sonic.LocalScript 
 	local script = Instance.new('LocalScript', sonic)
 
 	local Plr = game.Players.LocalPlayer
@@ -163,8 +207,8 @@ local function EBWYR_fake_script() -- sonic.LocalScript
 		end
 	end)
 end
-coroutine.wrap(EBWYR_fake_script)()
-local function QPTX_fake_script() -- sonic.LocalScript 
+coroutine.wrap(DGTXW_fake_script)()
+local function CIBMR_fake_script() -- sonic.LocalScript 
 	local script = Instance.new('LocalScript', sonic)
 
 	local frame = script.Parent
@@ -191,8 +235,8 @@ local function QPTX_fake_script() -- sonic.LocalScript
 	
 	frame.PlayerName.Text = player.Name
 end
-coroutine.wrap(QPTX_fake_script)()
-local function JZGQH_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(CIBMR_fake_script)()
+local function HEFD_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local frame = script.Parent.Parent.sonic
@@ -206,4 +250,14 @@ local function JZGQH_fake_script() -- TextButton_2.LocalScript
 		end
 		end)
 end
-coroutine.wrap(JZGQH_fake_script)()
+coroutine.wrap(HEFD_fake_script)()
+local function QAYOQSB_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	local Sound = script.Parent.Parent.Sound
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Sound:Play()
+	end)
+end
+coroutine.wrap(QAYOQSB_fake_script)()
