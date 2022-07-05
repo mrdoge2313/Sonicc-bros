@@ -126,7 +126,7 @@ TextButton_2.TextSize = 19.000
 
 -- Scripts:
 
-local function DERFOJ_fake_script() -- Tab1_2.LocalScript 
+local function CYEY_fake_script() -- Tab1_2.LocalScript 
 	local script = Instance.new('LocalScript', Tab1_2)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -134,8 +134,8 @@ local function DERFOJ_fake_script() -- Tab1_2.LocalScript
 		script.Parent.Parent.Parent.Tab2.Visible = false
 	end) 
 end
-coroutine.wrap(DERFOJ_fake_script)()
-local function FGEL_fake_script() -- Tab2.LocalScript 
+coroutine.wrap(CYEY_fake_script)()
+local function MBHHHG_fake_script() -- Tab2.LocalScript 
 	local script = Instance.new('LocalScript', Tab2)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -143,8 +143,8 @@ local function FGEL_fake_script() -- Tab2.LocalScript
 		script.Parent.Parent.Parent.Tab2.Visible = true
 	end) 
 end
-coroutine.wrap(FGEL_fake_script)()
-local function EWRA_fake_script() -- Tab2.LocalScript 
+coroutine.wrap(MBHHHG_fake_script)()
+local function WZQTDOG_fake_script() -- Tab2.LocalScript 
 	local script = Instance.new('LocalScript', Tab2)
 
 	local Sound = script.Parent.Parent.Sound
@@ -153,8 +153,8 @@ local function EWRA_fake_script() -- Tab2.LocalScript
 		Sound:Play()
 	end) 
 end
-coroutine.wrap(EWRA_fake_script)()
-local function TUOTTG_fake_script() -- Tab2.LocalScript 
+coroutine.wrap(WZQTDOG_fake_script)()
+local function KTZJQCG_fake_script() -- Tab2.LocalScript 
 	local script = Instance.new('LocalScript', Tab2)
 
 	local Sound = script.Parent.Parent.Sound
@@ -163,8 +163,8 @@ local function TUOTTG_fake_script() -- Tab2.LocalScript
 		Sound:Play()
 	end)
 end
-coroutine.wrap(TUOTTG_fake_script)()
-local function EZWXC_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(KTZJQCG_fake_script)()
+local function BXCASW_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local Sound = script.Parent.Parent.Sound
@@ -173,32 +173,8 @@ local function EZWXC_fake_script() -- TextButton.LocalScript
 		Sound:Play()
 	end)
 end
-coroutine.wrap(EZWXC_fake_script)()
-local function PUZRB_fake_script() -- sonic.LocalScript 
-	local script = Instance.new('LocalScript', sonic)
-
-	local Plr = game.Players.LocalPlayer
-	
-	Plr:GetMouse().KeyDown:Connect(function(K)
-		if K == "l" then
-			script.Parent.Visible = true
-		end
-	end)
-	
-	
-	
-	
-	
-	local Plr = game.Players.LocalPlayer
-	
-	Plr:GetMouse().KeyDown:Connect(function(K)
-		if K == "k" then
-			script.Parent.Visible = false
-		end
-	end)
-end
-coroutine.wrap(PUZRB_fake_script)()
-local function JBOXIX_fake_script() -- sonic.LocalScript 
+coroutine.wrap(BXCASW_fake_script)()
+local function JEJKB_fake_script() -- sonic.LocalScript 
 	local script = Instance.new('LocalScript', sonic)
 
 	local frame = script.Parent
@@ -224,9 +200,34 @@ local function JBOXIX_fake_script() -- sonic.LocalScript
 	frame.PlayerImage.Image = content
 	
 	frame.PlayerName.Text = player.Name
+	
+	
 end
-coroutine.wrap(JBOXIX_fake_script)()
-local function WPONTV_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(JEJKB_fake_script)()
+local function WHILRN_fake_script() -- sonic.LocalScript 
+	local script = Instance.new('LocalScript', sonic)
+
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "k" then
+			script.Parent.Visible = true
+		end
+	end)
+	
+	
+	
+	
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "l" then
+			script.Parent.Visible = false
+		end
+	end)
+end
+coroutine.wrap(WHILRN_fake_script)()
+local function HBTFI_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local frame = script.Parent.Parent.sonic
@@ -240,8 +241,8 @@ local function WPONTV_fake_script() -- TextButton_2.LocalScript
 		end
 		end)
 end
-coroutine.wrap(WPONTV_fake_script)()
-local function DGVPOKI_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(HBTFI_fake_script)()
+local function HJMUMEC_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local Sound = script.Parent.Parent.Sound
@@ -250,4 +251,4 @@ local function DGVPOKI_fake_script() -- TextButton_2.LocalScript
 		Sound:Play()
 	end)
 end
-coroutine.wrap(DGVPOKI_fake_script)()
+coroutine.wrap(HJMUMEC_fake_script)()
