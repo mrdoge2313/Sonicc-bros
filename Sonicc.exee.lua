@@ -9,6 +9,8 @@ local Tab1_2 = Instance.new("TextButton")
 local Tab2 = Instance.new("TextButton")
 local Tab2_2 = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
+local PlayerImage = Instance.new("ImageLabel")
+local TextLabel_3 = Instance.new("TextLabel")
 local TextButton_2 = Instance.new("TextButton")
 
 --Properties:
@@ -22,7 +24,6 @@ sonic.Position = UDim2.new(0.631620586, 0, 0.662546337, 0)
 sonic.Size = UDim2.new(0, 544, 0, 262)
 sonic.Active = true
 sonic.Draggable = true
-
 
 TextLabel.Parent = sonic
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -48,9 +49,9 @@ TextLabel_2.BackgroundTransparency = 100.000
 TextLabel_2.Position = UDim2.new(0.237089202, 0, 0.277777791, 0)
 TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
 TextLabel_2.Font = Enum.Font.SciFi
-TextLabel_2.Text = "Made by mr_chinese#7614"
+TextLabel_2.Text = "Ui by mr_sad2579\\nScripter:\\nmr_sad2579"
 TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.TextSize = 41.000
+TextLabel_2.TextSize = 52.000
 
 TabHolder.Name = "TabHolder"
 TabHolder.Parent = sonic
@@ -93,6 +94,23 @@ TextButton.Text = "Soon"
 TextButton.TextColor3 = Color3.fromRGB(225, 225, 225)
 TextButton.TextSize = 82.000
 
+PlayerImage.Name = "PlayerImage"
+PlayerImage.Parent = sonic
+PlayerImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerImage.Position = UDim2.new(0, 0, 0.812977076, 0)
+PlayerImage.Size = UDim2.new(0, 47, 0, 49)
+PlayerImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+TextLabel_3.Parent = sonic
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 100.000
+TextLabel_3.Position = UDim2.new(0.101102941, 0, 0.812977076, 0)
+TextLabel_3.Size = UDim2.new(0, 62, 0, 49)
+TextLabel_3.Font = Enum.Font.SciFi
+TextLabel_3.Text = "Welcome"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 18.000
+
 TextButton_2.Parent = ScreenGui
 TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 TextButton_2.Position = UDim2.new(0, 0, 0.584672451, 0)
@@ -104,7 +122,7 @@ TextButton_2.TextSize = 19.000
 
 -- Scripts:
 
-local function WNJOWK_fake_script() -- Tab1_2.LocalScript 
+local function LNUID_fake_script() -- Tab1_2.LocalScript 
 	local script = Instance.new('LocalScript', Tab1_2)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -112,8 +130,8 @@ local function WNJOWK_fake_script() -- Tab1_2.LocalScript
 		script.Parent.Parent.Parent.Tab2.Visible = false
 	end) 
 end
-coroutine.wrap(WNJOWK_fake_script)()
-local function OWAZ_fake_script() -- Tab2.LocalScript 
+coroutine.wrap(LNUID_fake_script)()
+local function OUIUMJ_fake_script() -- Tab2.LocalScript 
 	local script = Instance.new('LocalScript', Tab2)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -121,8 +139,8 @@ local function OWAZ_fake_script() -- Tab2.LocalScript
 		script.Parent.Parent.Parent.Tab2.Visible = true
 	end) 
 end
-coroutine.wrap(OWAZ_fake_script)()
-local function ZNBOGW_fake_script() -- sonic.LocalScript 
+coroutine.wrap(OUIUMJ_fake_script)()
+local function EBWYR_fake_script() -- sonic.LocalScript 
 	local script = Instance.new('LocalScript', sonic)
 
 	local Plr = game.Players.LocalPlayer
@@ -145,8 +163,36 @@ local function ZNBOGW_fake_script() -- sonic.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ZNBOGW_fake_script)()
-local function BOBDZJ_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(EBWYR_fake_script)()
+local function QPTX_fake_script() -- sonic.LocalScript 
+	local script = Instance.new('LocalScript', sonic)
+
+	local frame = script.Parent
+	
+	
+	
+	local player = game.Players.LocalPlayer
+	
+	
+	
+	local userId = player.UserId
+	
+	local thumbType = Enum.ThumbnailType.AvatarBust
+	
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	
+	local content, isReady = game.Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	
+	
+	
+	
+	frame.PlayerImage.Image = content
+	
+	frame.PlayerName.Text = player.Name
+end
+coroutine.wrap(QPTX_fake_script)()
+local function JZGQH_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local frame = script.Parent.Parent.sonic
@@ -160,4 +206,4 @@ local function BOBDZJ_fake_script() -- TextButton_2.LocalScript
 		end
 		end)
 end
-coroutine.wrap(BOBDZJ_fake_script)()
+coroutine.wrap(JZGQH_fake_script)()
