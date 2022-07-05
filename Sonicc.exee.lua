@@ -24,6 +24,8 @@ sonic.Parent = ScreenGui
 sonic.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 sonic.Position = UDim2.new(0.618181825, 0, 0.668726802, 0)
 sonic.Size = UDim2.new(0, 544, 0, 262)
+sonic.Active = true
+sonic.Draggable = true
 
 TextLabel.Parent = sonic
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
