@@ -13,8 +13,8 @@ local Tab1_2 = Instance.new("TextButton")
 local Tab2 = Instance.new("TextButton")
 local Tab2_2 = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
-local PlayerImage = Instance.new("ImageLabel")
 local TextLabel_3 = Instance.new("TextLabel")
+local PlayerImage = Instance.new("ImageLabel")
 local TextButton_2 = Instance.new("TextButton")
 
 --Properties:
@@ -98,13 +98,6 @@ TextButton.Text = "Soon"
 TextButton.TextColor3 = Color3.fromRGB(225, 225, 225)
 TextButton.TextSize = 82.000
 
-PlayerImage.Name = "PlayerImage"
-PlayerImage.Parent = sonic
-PlayerImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-PlayerImage.Position = UDim2.new(0, 0, 0.812977076, 0)
-PlayerImage.Size = UDim2.new(0, 47, 0, 49)
-PlayerImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
-
 TextLabel_3.Parent = sonic
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.BackgroundTransparency = 100.000
@@ -114,6 +107,13 @@ TextLabel_3.Font = Enum.Font.SciFi
 TextLabel_3.Text = "Welcome"
 TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_3.TextSize = 18.000
+
+PlayerImage.Name = "PlayerImage"
+PlayerImage.Parent = sonic
+PlayerImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerImage.Position = UDim2.new(-0.0018382353, 0, 0.812977076, 0)
+PlayerImage.Size = UDim2.new(0, 45, 0, 49)
+PlayerImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
 TextButton_2.Parent = ScreenGui
 TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
@@ -126,7 +126,7 @@ TextButton_2.TextSize = 19.000
 
 -- Scripts:
 
-local function CYEY_fake_script() -- Tab1_2.LocalScript 
+local function VMRDIAU_fake_script() -- Tab1_2.LocalScript 
 	local script = Instance.new('LocalScript', Tab1_2)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -134,47 +134,17 @@ local function CYEY_fake_script() -- Tab1_2.LocalScript
 		script.Parent.Parent.Parent.Tab2.Visible = false
 	end) 
 end
-coroutine.wrap(CYEY_fake_script)()
-local function MBHHHG_fake_script() -- Tab2.LocalScript 
+coroutine.wrap(VMRDIAU_fake_script)()
+local function YQHFR_fake_script() -- Tab2.LocalScript 
 	local script = Instance.new('LocalScript', Tab2)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		script.Parent.Parent.Parent.Tab1.Visible = false
 		script.Parent.Parent.Parent.Tab2.Visible = true
-	end) 
-end
-coroutine.wrap(MBHHHG_fake_script)()
-local function WZQTDOG_fake_script() -- Tab2.LocalScript 
-	local script = Instance.new('LocalScript', Tab2)
-
-	local Sound = script.Parent.Parent.Sound
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		Sound:Play()
-	end) 
-end
-coroutine.wrap(WZQTDOG_fake_script)()
-local function KTZJQCG_fake_script() -- Tab2.LocalScript 
-	local script = Instance.new('LocalScript', Tab2)
-
-	local Sound = script.Parent.Parent.Sound
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		Sound:Play()
 	end)
 end
-coroutine.wrap(KTZJQCG_fake_script)()
-local function BXCASW_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
-
-	local Sound = script.Parent.Parent.Sound
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		Sound:Play()
-	end)
-end
-coroutine.wrap(BXCASW_fake_script)()
-local function JEJKB_fake_script() -- sonic.LocalScript 
+coroutine.wrap(YQHFR_fake_script)()
+local function XIYE_fake_script() -- sonic.LocalScript 
 	local script = Instance.new('LocalScript', sonic)
 
 	local frame = script.Parent
@@ -203,8 +173,8 @@ local function JEJKB_fake_script() -- sonic.LocalScript
 	
 	
 end
-coroutine.wrap(JEJKB_fake_script)()
-local function WHILRN_fake_script() -- sonic.LocalScript 
+coroutine.wrap(XIYE_fake_script)()
+local function LQTD_fake_script() -- sonic.LocalScript 
 	local script = Instance.new('LocalScript', sonic)
 
 	local Plr = game.Players.LocalPlayer
@@ -226,8 +196,36 @@ local function WHILRN_fake_script() -- sonic.LocalScript
 		end
 	end)
 end
-coroutine.wrap(WHILRN_fake_script)()
-local function HBTFI_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(LQTD_fake_script)()
+local function EKGIP_fake_script() -- sonic.LocalScript 
+	local script = Instance.new('LocalScript', sonic)
+
+	local frame = script.Parent
+	
+	
+	
+	local player = game.Players.LocalPlayer
+	
+	
+	
+	local userId = player.UserId
+	
+	local thumbType = Enum.ThumbnailType.AvatarBust
+	
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	
+	local content, isReady = game.Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	
+	
+	
+	
+	frame.PlayerImage.Image = content
+	
+	frame.PlayerName.Text = player.Name
+end
+coroutine.wrap(EKGIP_fake_script)()
+local function YGTY_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local frame = script.Parent.Parent.sonic
@@ -241,8 +239,8 @@ local function HBTFI_fake_script() -- TextButton_2.LocalScript
 		end
 		end)
 end
-coroutine.wrap(HBTFI_fake_script)()
-local function HJMUMEC_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(YGTY_fake_script)()
+local function GHZX_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local Sound = script.Parent.Parent.Sound
@@ -251,4 +249,4 @@ local function HJMUMEC_fake_script() -- TextButton_2.LocalScript
 		Sound:Play()
 	end)
 end
-coroutine.wrap(HJMUMEC_fake_script)()
+coroutine.wrap(GHZX_fake_script)()
