@@ -51,7 +51,7 @@ TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
 TextLabel_2.Font = Enum.Font.SciFi
 TextLabel_2.Text = "Made by mr_chinese#7614"
 TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.TextSize = 41.000
+TextLabel_2.TextSize = 40.000
 
 TabHolder.Name = "TabHolder"
 TabHolder.Parent = sonic
