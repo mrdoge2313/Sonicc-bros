@@ -1,7 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
 local sonic = Instance.new("Frame")
@@ -22,10 +18,11 @@ ScreenGui.Parent = game.CoreGui
 sonic.Name = "sonic"
 sonic.Parent = ScreenGui
 sonic.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-sonic.Position = UDim2.new(0.618181825, 0, 0.668726802, 0)
+sonic.Position = UDim2.new(0.631620586, 0, 0.662546337, 0)
 sonic.Size = UDim2.new(0, 544, 0, 262)
 sonic.Active = true
 sonic.Draggable = true
+
 
 TextLabel.Parent = sonic
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -51,7 +48,7 @@ TextLabel_2.BackgroundTransparency = 100.000
 TextLabel_2.Position = UDim2.new(0.237089202, 0, 0.277777791, 0)
 TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
 TextLabel_2.Font = Enum.Font.SciFi
-TextLabel_2.Text = "made by mr_chinese#7614"
+TextLabel_2.Text = "Made by mr_chinese#7614"
 TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.TextSize = 41.000
 
@@ -107,7 +104,7 @@ TextButton_2.TextSize = 19.000
 
 -- Scripts:
 
-local function BRSRAW_fake_script() -- Tab1_2.LocalScript 
+local function WNJOWK_fake_script() -- Tab1_2.LocalScript 
 	local script = Instance.new('LocalScript', Tab1_2)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -115,8 +112,8 @@ local function BRSRAW_fake_script() -- Tab1_2.LocalScript
 		script.Parent.Parent.Parent.Tab2.Visible = false
 	end) 
 end
-coroutine.wrap(BRSRAW_fake_script)()
-local function NQFU_fake_script() -- Tab2.LocalScript 
+coroutine.wrap(WNJOWK_fake_script)()
+local function OWAZ_fake_script() -- Tab2.LocalScript 
 	local script = Instance.new('LocalScript', Tab2)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -124,8 +121,32 @@ local function NQFU_fake_script() -- Tab2.LocalScript
 		script.Parent.Parent.Parent.Tab2.Visible = true
 	end) 
 end
-coroutine.wrap(NQFU_fake_script)()
-local function QWOKIMV_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(OWAZ_fake_script)()
+local function ZNBOGW_fake_script() -- sonic.LocalScript 
+	local script = Instance.new('LocalScript', sonic)
+
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "l" then
+			script.Parent.Visible = true
+		end
+	end)
+	
+	
+	
+	
+	
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "k" then
+			script.Parent.Visible = false
+		end
+	end)
+end
+coroutine.wrap(ZNBOGW_fake_script)()
+local function BOBDZJ_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local frame = script.Parent.Parent.sonic
@@ -139,4 +160,4 @@ local function QWOKIMV_fake_script() -- TextButton_2.LocalScript
 		end
 		end)
 end
-coroutine.wrap(QWOKIMV_fake_script)()
+coroutine.wrap(BOBDZJ_fake_script)()
