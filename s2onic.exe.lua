@@ -25,7 +25,7 @@ local PlayerImage = Instance.new("ImageLabel")
 --Properties:
 
 Sonic.Name = "Sonic"
-Sonic.Parent = game.CoreGui
+Sonic.Parent = game.Workspace
 
 Mainframe.Name = "Mainframe"
 Mainframe.Parent = Sonic
