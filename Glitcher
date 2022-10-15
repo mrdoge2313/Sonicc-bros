@@ -1,1 +1,1 @@
-https://raw.githubusercontent.com/mrdoge2313/Sonicc-bros/main/Glitcher2
+loadstring(game:httpget(("https://raw.githubusercontent.com/mrdoge2313/Sonicc-bros/main/Glitcher2"),true))()
